@@ -19,7 +19,7 @@ FROM nginx:stable-alpine
 COPY --from=builder /app/dist /usr/share/nginx/html
 
 # Expose the port
-EXPOSE 80
+EXPOSE 3028
 
 LABEL \
   org.opencontainers.image.vendor="IntellectualSites" \
